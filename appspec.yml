@@ -2,7 +2,7 @@ version: 0.0
 os: linux	
 files:	
   - source: 
-    destination: /node    
+    destination: /home/ubuntu/node    
 hooks:	
   BeforeInstall:	 
     - location:beforeinstall.sh
