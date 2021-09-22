@@ -2,12 +2,12 @@ version: 0.0
 os: linux	
 files:	
   - source: 
-    destination: /var/www/html/	    
+    destination: /node    
 hooks:	
   BeforeInstall:	 
-    - location: scripts/beforeinstall.sh
+    - location:beforeinstall.sh
       timeout: 300	     
       runas: ubuntu	     
-    - location: scripts/afterinstall.sh  
+    - location:afterinstall.sh  
       timeout: 300	     
       runas: ubuntu
